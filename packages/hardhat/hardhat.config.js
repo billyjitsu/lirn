@@ -37,12 +37,12 @@ module.exports = {
     //   url: `https://ropsten.infura.io/v3/${process.env.NEXT_PUBLIC_INFURA_ID}`,
     //   accounts: [`${process.env.PRIVATE_KEY}`],
     // },
-    // rinkeby: {
-    //   chainId: 4,
-    //   url: `https://eth-rinkeby.alchemyapi.io/v2/${process.env.NEXT_PUBLIC_ALCHEMY_ID}`,
-    //   url: `https://rinkeby.infura.io/v3/${process.env.NEXT_PUBLIC_INFURA_ID}`,
-    //   accounts: [`${process.env.PRIVATE_KEY}`],
-    // },
+     rinkeby: {
+       chainId: 4,
+       url: `https://eth-rinkeby.alchemyapi.io/v2/${process.env.NEXT_PUBLIC_ALCHEMY_ID}`,
+       url: `https://rinkeby.infura.io/v3/${process.env.NEXT_PUBLIC_INFURA_ID}`,
+       accounts: [`${process.env.PRIVATE_KEY}`],
+     },
     // goerli: {
     //   chainId: 5,
     //   url: `https://eth-goerli.alchemyapi.io/v2/${process.env.NEXT_PUBLIC_ALCHEMY_ID}`,
@@ -82,4 +82,9 @@ module.exports = {
     },
     tokenOwner: 1,
   },
+  etherscan: {
+    // Your API key for Etherscan
+    // Obtain one at https://etherscan.io/
+    apiKey: process.env.ETHERSCAN_API_KEY
+  }
 };
